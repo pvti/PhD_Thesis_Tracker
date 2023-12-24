@@ -2,7 +2,7 @@
 
 ![Time Progress][##################-------------------------------]
 
-## Time Progress
+## 🕐 Time Progress
 
 - Contract Start Date: 21/11/2022
 - Contract End Date: 20/11/2025
@@ -11,7 +11,7 @@
 - Time Left: 696 days
 - Completion: 36.38%
 
-## Publications
+## 📈 Publications
 
 | Project                                             | Submitted Date | Venue           | Status         | Note   |
 |-----------------------------------------------------|----------------|-----------------|----------------|--------|
