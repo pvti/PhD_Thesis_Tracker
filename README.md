@@ -1,6 +1,6 @@
 # PhD Thesis Progress Tracker
 
-![Time Progress](badge-url-here)
+![Time Progress][##################-------------------------------]
 
 ## Time Progress
 
@@ -9,9 +9,9 @@
 
 ### Overview
 
-- Time Spent: X days
-- Time Left: Y days
-- Completion: Z%
+- Time Spent: 398 days
+- Time Left: 696 days
+- Completion: 36.38%
 
 ### Publications
 
