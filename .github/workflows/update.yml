@@ -1,0 +1,25 @@
+name: Update PhD Progress
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run every day at midnight
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Run Update Script
+        run: |
+          python update.py
+          git add README.md
+          git commit -m "Auto-update progress"
+          git push
