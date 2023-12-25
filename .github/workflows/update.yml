@@ -32,5 +32,7 @@ jobs:
         run: |
           python update.py
           git add README.md
-          git commit -m "Auto-update progress"
+          git add progress.gif
+          now=$(date)
+          git commit -m "Auto-update progress on $now"
           git push
