@@ -11,7 +11,7 @@ time_left = (contract_end - today).days
 completion = (time_spent / (time_spent + time_left)) * 100
 
 # Draw a text-based progress bar
-bar_length = 50
+bar_length = 100
 progress_bar = f"[{'#' * int(bar_length * (time_spent / (time_spent + time_left)))}{'-' * int(bar_length * (time_left / (time_spent + time_left)))}]"
 
 # Format today's date
@@ -25,8 +25,8 @@ with open('README.md', 'r') as file:
 for i, line in enumerate(readme_lines):
     if line.startswith('- Today:'):
         readme_lines[i] = f'- Today: {formatted_today}\n'
-    elif line.startswith('![Time Progress]('):
-        readme_lines[i] = f'![Time Progress]{progress_bar}\n'
+    elif line.startswith('- Progress:'):
+        readme_lines[i] = f'- Progress: {progress_bar}\n'
 
 # Update README.md
 with open('README.md', 'w') as file:

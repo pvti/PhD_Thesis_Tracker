@@ -1,7 +1,5 @@
 # PhD Thesis Progress Tracker
 
-![Time Progress][##################-------------------------------]
-
 ## 🕐 Time Progress
 
 - Today: 25/12/2023
@@ -11,6 +9,7 @@
 - Time Spent: 398 days
 - Time Left: 696 days
 - Completion: 36.38%
+- Progress: [####################################---------------------------------------------------------------]
 
 ## 📈 Publications
 
