@@ -4,6 +4,7 @@
 
 ## 🕐 Time Progress
 
+- Today:
 - Contract Start Date: 21/11/2022
 - Contract End Date: 20/11/2025
 
