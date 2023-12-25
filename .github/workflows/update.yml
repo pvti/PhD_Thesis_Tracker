@@ -17,10 +17,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run Update Script
+      - name: Configure Git
         run: |
           git config --global user.email "pvtien96@gmail.com"
           git config --global user.name "Tien PHAM"
+
+      - name: Run Update Script
+        run: |
           python update.py
           git add README.md
           git commit -m "Auto-update progress"
