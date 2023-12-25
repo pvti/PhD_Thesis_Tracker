@@ -1,3 +1,4 @@
+![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fpvtien96%2FPhD_Thesis_Tracker&label=Views&labelColor=%2337d67a&countColor=%23ff8a65&style=flat-square)
 # PhD Thesis Progress Tracker
 
 <td style="width: 10%; padding: 10px; border: none;">
