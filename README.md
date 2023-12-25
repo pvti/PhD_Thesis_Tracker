@@ -15,7 +15,6 @@
 
 | Project                                             | Submitted Date | Venue           | Status         | Note   |
 |-----------------------------------------------------|----------------|-----------------|----------------|--------|
-| [CORING](https://github.com/pvtien96/CORING)        | 08/03/2023     | ICCV'23         | Rejected       |        |
 | [CORING](https://github.com/pvtien96/CORING_GRETSI) | 16/04/2023     | GRETSI'23       | Accepted       |        |
 | [CORING](https://github.com/pvtien96/CORING)        | 12/10/2023     | Neural Networks | Under Review   |        |
 | [NORTON](https://github.com/pvtien96/NORTON)        | 26/07/2023     | TNNLS           | Under Review   |        |
