@@ -91,7 +91,8 @@ def animate_progress_with_items(spent_time, left_time, total_frames=100):
 
     # Create an initial mouse marker
     # mouse_marker = ax.text(0, 0, '🐭', fontsize=12, va='center', ha='right')
-    mouse_marker = ax.text(0, 0, '😊', fontsize=12, va='center', ha='right')
+    status = random.choice(['😉', '😳', '😅', '😎', '😂', '😊', '😖', '😥', '😂', '😋', '😃', '😚', '😉', '😝', '😦', '😕', '😒', '😔', '😞', '😇'])
+    mouse_marker = ax.text(0, 0, status, fontsize=12, va='center', ha='right')
 
     # Set the x-axis limits
     ax.set_xlim(0, 1)
