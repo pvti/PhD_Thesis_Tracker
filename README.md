@@ -4,7 +4,7 @@
       <img src="progress.gif" alt="Progress" style="height: 10%">
 </td>
 
-## 🕐 Time Progress
+## :calendar: Time Progress
 
 - Today: 25/12/2023
 - Contract Start Date: 21/11/2022
@@ -23,3 +23,7 @@
 | [CORING](https://github.com/pvtien96/CORING)        | 12/10/2023     | Neural Networks | Under Review   |        |
 | [NORTON](https://github.com/pvtien96/NORTON)        | 26/07/2023     | TNNLS           | Under Review   |        |
 | to be continued ...                                 |                |                 |                |        |
+
+---
+
+Feel free to use this oh-so-fab template 🌈✨🎨 If this brought a 😊 to your face, consider sprinkling a ⭐️ on it. Happy coding! 🚀
