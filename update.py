@@ -15,8 +15,8 @@ mouse_size = 0.0
 # Function to calculate time progress
 def calculate_time_progress():
     today = datetime.datetime.now()
-    time_spent = (today - CONTRACT_START).days
-    time_left = (CONTRACT_END - today).days
+    time_spent = (today - CONTRACT_START).days + 1
+    time_left = (CONTRACT_END - today).days + 1
     completion = (time_spent / (time_spent + time_left)) * 100
     return time_spent, time_left, completion
 
@@ -27,13 +27,17 @@ def draw_progress_bar(bar_length, completion):
     return bar
 
 # Function to update README.md with time progress
-def update_readme(progress_bar, formatted_today, completion):
+def update_readme(progress_bar, formatted_today, time_spent, time_left, completion):
     with open('README.md', 'r') as file:
         readme_lines = file.readlines()
 
     for i, line in enumerate(readme_lines):
         if line.startswith('- Today:'):
             readme_lines[i] = f'- Today: {formatted_today}\n'
+        elif line.startswith('- Time Spent:'):
+            readme_lines[i] = f'- Time Spent: {time_spent} days\n'
+        elif line.startswith('- Time Left:'):
+            readme_lines[i] = f'- Time Left: {time_left} days\n'
         elif line.startswith('- Completion:'):
             # Round completion to 2 decimal places, add %, and make it bold
             formatted_completion = f'<b>{completion:.2f}%</b>'
@@ -49,7 +53,7 @@ def update_and_draw_progress():
     time_spent, time_left, completion = calculate_time_progress()
     progress_bar = draw_progress_bar(bar_length=100, completion=completion)
     formatted_today = datetime.datetime.now().strftime("%d/%m/%Y")
-    update_readme(progress_bar, formatted_today, completion)
+    update_readme(progress_bar, formatted_today, time_spent, time_left, completion)
     animate_progress_with_items(spent_time=time_spent, left_time=time_left, total_frames=100)
 
 # Function to eat an item
@@ -121,8 +125,4 @@ def animate_progress_with_items(spent_time, left_time, total_frames=100):
     # Save the animation to a GIF file
     animation.save("progress.gif", writer='pillow', fps=20)
 
-    # Display the plot (optional)
-    plt.show()
-
-# Example usage:
 update_and_draw_progress()
