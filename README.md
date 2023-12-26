@@ -11,9 +11,9 @@
 - Contract Start Date: 21/11/2022
 - Contract End Date: 20/11/2025
 
-- Time Spent: 398 days
-- Time Left: 696 days
-- Completion: <b>36.56%</b>
+- Time Spent: 401 days
+- Time Left: 695 days
+- Completion: <b>36.59%</b>
 - Progress: [####################################----------------------------------------------------------------]
 
 ## 📈 Publications
