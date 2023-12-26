@@ -1,6 +1,7 @@
 import datetime
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+import matplotlib.colors as mcolors
 import numpy as np
 import random
 
@@ -20,6 +21,16 @@ def calculate_time_progress():
     completion = (time_spent / (time_spent + time_left)) * 100
     return time_spent, time_left, completion
 
+def generate_progress_badge(completion):
+    # Get color from the RdYlGn colormap
+    progress = completion / 100
+    colors = plt.cm.RdYlGn(progress)
+
+    # Generate Markdown text for the badge
+    badge_text = f'![Progress](https://img.shields.io/badge/Progress-{completion:.2f}%25-{mcolors.to_hex(colors)[1:]}?style=flat-square)'
+
+    return badge_text
+
 # Function to draw a text-based progress bar
 def draw_progress_bar(bar_length, completion):
     filled_length = int(bar_length * (completion / 100))
@@ -28,11 +39,15 @@ def draw_progress_bar(bar_length, completion):
 
 # Function to update README.md with time progress
 def update_readme(progress_bar, formatted_today, time_spent, time_left, completion):
+    progress_badge = generate_progress_badge(completion)
+
     with open('README.md', 'r') as file:
         readme_lines = file.readlines()
 
     for i, line in enumerate(readme_lines):
-        if line.startswith('- Today:'):
+        if line.startswith('![Progress]'):
+            readme_lines[i] = f'{progress_badge}\n'
+        elif line.startswith('- Today:'):
             readme_lines[i] = f'- Today: {formatted_today}\n'
         elif line.startswith('- Time Spent:'):
             readme_lines[i] = f'- Time Spent: {time_spent} days\n'
