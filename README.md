@@ -7,13 +7,13 @@
 
 ## :calendar: Time Progress
 
-- Today: 25/12/2023
+- Today: 26/12/2023
 - Contract Start Date: 21/11/2022
 - Contract End Date: 20/11/2025
 
 - Time Spent: 398 days
 - Time Left: 696 days
-- Completion: <b>36.47%</b>
+- Completion: <b>36.56%</b>
 - Progress: [####################################----------------------------------------------------------------]
 
 ## 📈 Publications
