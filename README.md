@@ -23,7 +23,7 @@
 | Project                                             | Submitted Date | Venue           | Status         | Note   |
 |-----------------------------------------------------|----------------|-----------------|----------------|--------|
 | [:ring: Élagage efficace des filtres basé sur les décompositions tensorielles](https://www.gretsi.fr/data/colloque/pdf/2023_pham1312.pdf) | 16/04/2023     | [GRETSI'23](https://gretsi.fr/colloque2023/)       | Accepted       |        |
-| [:stars: Enhanced network compression through tensor decompositions and pruning](https://github.com/pvtien96/NORTON)        | 26/07/2023     | [TNNLS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385)           | Under Review   |        |
+| [:stars: Enhanced network compression through tensor decompositions and pruning](https://github.com/pvtien96/NORTON)        | 26/07/2023     | [TNNLS](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385)           | Accepted   |        |
 | [:ring: Efficient tensor decomposition-based filter pruning](https://github.com/pvtien96/CORING)        | 12/10/2023     | [Neural Networks](https://www.sciencedirect.com/journal/neural-networks) | Under Review   |        |
 | to be continued ...                                 |                |                 |                |        |
 
