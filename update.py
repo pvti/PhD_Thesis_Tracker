@@ -34,7 +34,7 @@ def generate_progress_badge(completion):
 # Function to draw a text-based progress bar
 def draw_progress_bar(bar_length, completion):
     filled_length = int(bar_length * (completion / 100))
-    bar = f"[{'#' * filled_length}{'-' * (bar_length - filled_length)}]"
+    bar = f"[{'+' * filled_length}{'-' * (bar_length - filled_length)}]"
     return bar
 
 # Function to update README.md with time progress
